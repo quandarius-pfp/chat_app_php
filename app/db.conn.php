@@ -1,20 +1,39 @@
 <?php 
 
+
+
 # server name
-$sName = "localhost";
+
+$sName = "";
+
 # user name
-$uName = "root";
+
+$uName = "codewith_blogs1";
+
 # password
-$pass = "";
+
+$pass = "quan20112002";
+
+
 
 # database name
-$db_name = "chat_app_db";
+
+$db_name = "codewith_chat";
+
+
 
 #creating database connection
+
 try {
+
     $conn = new PDO("mysql:host=$sName;dbname=$db_name", 
+
                     $uName, $pass);
+
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 }catch(PDOException $e){
+
   echo "Connection failed : ". $e->getMessage();
+
 }

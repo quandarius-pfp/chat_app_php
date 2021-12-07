@@ -1,0 +1,5 @@
+[06-Dec-2021 16:17:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 2013 Lost connection to MySQL server during query in /home/codewith8/public_html/chat app/app/ajax/search.php:19
+Stack trace:
+#0 /home/codewith8/public_html/chat app/app/ajax/search.php(19): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/codewith8/public_html/chat app/app/ajax/search.php on line 19
